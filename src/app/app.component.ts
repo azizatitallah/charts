@@ -43,13 +43,14 @@ export class AppComponent {
   chart     : Chart;
   Quote     = " 'You can never understand everything. But, you should push yourself to understand the system.' #Ryan Dahl"
   type      : string;
-  Types     = ['bar','horizontalBar','pie','line','radar','polarArea'];
+  Types     = ['bar','horizontalBar','pie','line','radar','polarArea',''];
   Drivers   = ['Driver 1'];
   Data      = [{  label           : 'Driver 1'            ,
                   data            : []                    ,   // To be filled later when subscribing to the response of the API Service
                   backgroundColor : 'rgba(23, 22, 66,0.7)',
                   borderColor     : 'rgb(50, 193, 209)'   
               }];
+  ArsenicLogo ='B';
   
 
   // Methods
@@ -140,6 +141,16 @@ export class AppComponent {
     this.Drivers.pop();
     this.chart.update();
 
+  }
+
+  Arsenic(values:any)
+  {
+    if(values.currentTarget.checked)
+    {
+      this.ArsenicLogo='B';
+    }
+    else{this.ArsenicLogo='A'}
+    
   }
 
 }

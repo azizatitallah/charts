@@ -4,9 +4,20 @@
       <select (change)="onChange($event.target.value)" name='ChartType'>
           <option *ngFor="let i of Types">{{i}}</option>
       </select>
-    
-  <canvas id="canvas">{{ chart }}</canvas>
+
+
+     
+  
+      <div class={{ArsenicLogo}}>
+        <div *ngIf="ArsenicLogo=='A';else other_content"><legend for="Arsenic" > Arsenic Logo</legend> </div>
+        <ng-template #other_content></ng-template>
+          <input type='checkbox' name="Arsenic" checked value='Arsenic' (change)="Arsenic($event)">
+    <canvas id="canvas">{{ chart }}</canvas></div>
+
   <marquee>{{Quote}} </marquee>
-<button (click)='popDriver()'>Remove Driver {{Drivers.length}}</button>
-<button (click)='addDriver()'>Add Driver {{Drivers.length+1}}</button>
+<button (click)='popDriver()'>Remove Driver {{Drivers.length}}  </button>
+<button (click)='addDriver()'>Add Driver {{Drivers.length+1}}   </button>
+
 </div>
+
+
