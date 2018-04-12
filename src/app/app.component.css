@@ -1,0 +1,39 @@
+marquee{
+    background: #c93131b7;
+    color: #fffbfb;
+    font-style: italic;
+    font-family: Cambria,Times New Roman, Times, serif;
+}
+
+div.canvas{
+
+    height:50%;
+    width:50%;
+    padding:3%;
+    margin-left:22.5%;
+    position:relative;
+    border:solid 2px rgba(23, 22, 66,0.8);
+}
+
+select,option{
+    margin-left: 42.5%;
+}
+
+legend{
+    margin-left: 42.5%;
+    color: rgba(23, 22, 66,0.8);
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+button{
+        color:#FFFFFF;
+        font-size: 16px;
+        font-weight: bold;
+        background-color:#f4b136;
+        padding: 8px 18px;
+        border: 2px solid white;
+        border-radius:12px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        margin-left:22%;
+    
+}

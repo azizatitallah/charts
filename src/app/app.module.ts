@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HttpClientModule } from '@angular/common/http';
+import { DistancesService } from './distances.service';
 
 import { AppComponent } from './app.component';
 
@@ -10,9 +12,9 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,HttpClientModule
   ],
-  providers: [],
+  providers: [DistancesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
