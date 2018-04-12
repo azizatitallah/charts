@@ -40,7 +40,7 @@ export class AppComponent {
   // Properties
 
   title     = 'app';
-  chart     = [];
+  chart     : Chart;
   Quote     = " 'You can never understand everything. But, you should push yourself to understand the system.' #Ryan Dahl"
   type      : string;
   Types     = ['bar','horizontalBar','pie','line','radar','polarArea'];
